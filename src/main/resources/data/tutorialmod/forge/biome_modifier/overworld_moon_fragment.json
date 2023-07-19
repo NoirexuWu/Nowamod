@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:warm_ocean",
+  "features": "tutorialmod:moon_fragment_placed",
+  "step": "underground_ores"
+}

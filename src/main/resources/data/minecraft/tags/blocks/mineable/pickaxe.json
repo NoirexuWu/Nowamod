@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "tutorialmod:moon_fragment_block",
+    "tutorialmod:dirty_moon_fragment_ore",
+    "tutorialmod:deepslate_dirty_moon_fragment_ore"
+  ]
+}

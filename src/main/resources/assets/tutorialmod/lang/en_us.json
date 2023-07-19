@@ -1,0 +1,35 @@
+{
+  "item.tutorialmod.dirty_moon_fragment": "Dirty Moon Fragment",
+  "item.tutorialmod.moon_fragment": "Moon Fragment",
+  "item.tutorialmod.dirty_sun_fragment": "Dirty Sun Fragment",
+  "item.tutorialmod.sun_fragment": "Sun Fragment",
+  "item.tutorialmod.moon_ingot": "Moon Ingot",
+  "item.tutorialmod.sun_ingot": "Sun Ingot",
+  "item.tutorialmod.moon_chestplate": "Moon Chestplate",
+  "item.tutorialmod.moon_helmet": "Moon Helmet",
+  "item.tutorialmod.moon_leggings": "Moon Leggings",
+  "item.tutorialmod.moon_boots": "Moon Boots",
+
+  "item.tutorialmod.coral_skeleton_spawn_egg": "Coral Skeleton Spawn Egg",
+  "item.tutorialmod.cute_spider_spawn_egg": "Phidippus Regius Spawn Egg",
+
+  "entity.tutorialmod.cskeleton": "Coral Skeleton",
+  "entity.tutorialmod.cspider": "Phidippus Regius",
+
+  "block.tutorialmod.moon_fragment_block": "Block of Moon Fragment",
+  "block.tutorialmod.dirty_moon_fragment_ore": "Dirty Moon Fragment Ore",
+  "block.tutorialmod.deepslate_dirty_moon_fragment_ore": "Deepslate Dirty Moon Fragment Ore",
+  "block.tutorialmod.dirty_moon_fragment_block": "Block of Dirty Moon Fragment",
+
+  "block.tutorialmod.ebony_log": "Ebony Log",
+  "block.tutorialmod.ebony_planks": "Ebony Planks",
+  "block.tutorialmod.ebony_wood": "Ebony Wood",
+  "block.tutorialmod.stripped_ebony_log": "Stripped Ebony Log",
+  "block.tutorialmod.stripped_ebony_wood": "Stripped Ebony Wood",
+  "block.tutorialmod.ebony_leaves": "Ebony Leaves",
+  "block.tutorialmod.ebony_sapling": "Ebony Sapling",
+
+
+  "creativemodtab.tutorial_tab": "Nowamod Tab"
+
+}

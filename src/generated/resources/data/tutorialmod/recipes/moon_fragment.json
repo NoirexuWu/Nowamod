@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "tutorialmod:moon_fragment_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "tutorialmod:moon_fragment"
+  }
+}
