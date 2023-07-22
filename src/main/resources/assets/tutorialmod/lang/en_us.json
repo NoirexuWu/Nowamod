@@ -12,9 +12,11 @@
 
   "item.tutorialmod.coral_skeleton_spawn_egg": "Coral Skeleton Spawn Egg",
   "item.tutorialmod.cute_spider_spawn_egg": "Phidippus Regius Spawn Egg",
+  "item.tutorialmod.carnivore_plant_spawn_egg": "Trap Plant Spawn Egg",
 
   "entity.tutorialmod.cskeleton": "Coral Skeleton",
   "entity.tutorialmod.cspider": "Phidippus Regius",
+  "entity.tutorialmod.cplant": "Trap Plant",
 
   "block.tutorialmod.moon_fragment_block": "Block of Moon Fragment",
   "block.tutorialmod.dirty_moon_fragment_ore": "Dirty Moon Fragment Ore",

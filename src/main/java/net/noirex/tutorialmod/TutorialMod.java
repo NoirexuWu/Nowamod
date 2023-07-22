@@ -14,10 +14,12 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.noirex.tutorialmod.block.ModBlocks;
 import net.noirex.tutorialmod.entity.ModEntities;
 import net.noirex.tutorialmod.entity.client.CSkeletonRenderer;
+import net.noirex.tutorialmod.entity.client.CarnivorePlantRenderer;
 import net.noirex.tutorialmod.entity.client.CuteSpiderRenderer;
 import net.noirex.tutorialmod.item.ModCreativeModeTabs;
 import net.noirex.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
+
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(TutorialMod.MOD_ID)
@@ -65,6 +67,7 @@ public class TutorialMod {
             event.accept(ModItems.MOON_BOOTS);
             event.accept(ModItems.CORAL_SKELETON_SPAWN_EGG);
             event.accept(ModItems.CUTE_SPIDER_SPAWN_EGG);
+            event.accept(ModItems.CARNIVORE_PLANT_SPAWN_EGG);
         }
 
         if(event.getTab() == ModCreativeModeTabs.TUTORIAL_TAB.get()) {
@@ -82,15 +85,14 @@ public class TutorialMod {
         }
 
     }
-
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents
-    {
+    public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             EntityRenderers.register(ModEntities.CSKELETON.get(), CSkeletonRenderer::new);
             EntityRenderers.register(ModEntities.CSPIDER.get(), CuteSpiderRenderer::new);
+            EntityRenderers.register(ModEntities.CPLANT.get(), CarnivorePlantRenderer::new);
         }
     }
 }

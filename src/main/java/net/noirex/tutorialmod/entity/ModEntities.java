@@ -8,6 +8,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.noirex.tutorialmod.TutorialMod;
+import net.noirex.tutorialmod.entity.custom.CarnivorePlantEntity;
 import net.noirex.tutorialmod.entity.custom.CoralSkeletonEntity;
 import net.noirex.tutorialmod.entity.custom.CuteSpiderEntity;
 
@@ -25,6 +26,11 @@ public class ModEntities {
                     () -> EntityType.Builder.of(CuteSpiderEntity::new, MobCategory.MONSTER)
                             .sized(0.6f, 0.5f)
                             .build(new ResourceLocation(TutorialMod.MOD_ID, "cspider").toString()));
+    public static final RegistryObject<EntityType<CarnivorePlantEntity>> CPLANT =
+            ENTITY_TYPES.register("cplant",
+                    () -> EntityType.Builder.of(CarnivorePlantEntity::new, MobCategory.CREATURE)
+                            .sized(0.6f, 0.5f)
+                            .build(new ResourceLocation(TutorialMod.MOD_ID, "cplant").toString()));
      public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
     }

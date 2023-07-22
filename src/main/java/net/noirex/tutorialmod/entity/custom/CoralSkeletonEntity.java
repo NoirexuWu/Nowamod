@@ -58,7 +58,7 @@ public class CoralSkeletonEntity extends Monster implements GeoEntity {
                 .add(Attributes.KNOCKBACK_RESISTANCE, 100D)
                 .add(Attributes.MAX_HEALTH, 25D)
                 .add(Attributes.ATTACK_DAMAGE, 15.0f)
-                .add(Attributes.ATTACK_SPEED, 0.5f)
+                .add(Attributes.ATTACK_SPEED, 50D)
                 .add(Attributes.MOVEMENT_SPEED, 0.3f).build();
 
 

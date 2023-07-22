@@ -5,6 +5,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.noirex.tutorialmod.TutorialMod;
 import net.noirex.tutorialmod.entity.ModEntities;
+import net.noirex.tutorialmod.entity.custom.CarnivorePlantEntity;
 import net.noirex.tutorialmod.entity.custom.CoralSkeletonEntity;
 import net.noirex.tutorialmod.entity.custom.CuteSpiderEntity;
 
@@ -14,6 +15,7 @@ public class ModEvents {
     public static void entityAttributeEvent(EntityAttributeCreationEvent event) {
         event.put(ModEntities.CSKELETON.get(), CoralSkeletonEntity.setAttributes());
         event.put(ModEntities.CSPIDER.get(), CuteSpiderEntity.setAttributes());
+        event.put(ModEntities.CPLANT.get(), CarnivorePlantEntity.setAttributes());
     }
 
 

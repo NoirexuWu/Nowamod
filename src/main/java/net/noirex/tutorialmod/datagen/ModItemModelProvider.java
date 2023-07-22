@@ -31,6 +31,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         withExistingParent(ModItems.CORAL_SKELETON_SPAWN_EGG.getId().getPath(),mcLoc("item/template_spawn_egg"));
         withExistingParent(ModItems.CUTE_SPIDER_SPAWN_EGG.getId().getPath(),mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.CARNIVORE_PLANT_SPAWN_EGG.getId().getPath(),mcLoc("item/template_spawn_egg"));
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
