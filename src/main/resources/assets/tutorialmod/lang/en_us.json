@@ -9,6 +9,10 @@
   "item.tutorialmod.moon_helmet": "Moon Helmet",
   "item.tutorialmod.moon_leggings": "Moon Leggings",
   "item.tutorialmod.moon_boots": "Moon Boots",
+  "item.tutorialmod.sun_chestplate": "Sun Chestplate",
+  "item.tutorialmod.sun_helmet": "Sun Helmet",
+  "item.tutorialmod.sun_leggings": "Sun Leggings",
+  "item.tutorialmod.sun_boots": "Sun Boots",
 
   "item.tutorialmod.coral_skeleton_spawn_egg": "Coral Skeleton Spawn Egg",
   "item.tutorialmod.cute_spider_spawn_egg": "Phidippus Regius Spawn Egg",
@@ -31,6 +35,10 @@
   "block.tutorialmod.dirty_moon_fragment_ore": "Dirty Moon Fragment Ore",
   "block.tutorialmod.deepslate_dirty_moon_fragment_ore": "Deepslate Dirty Moon Fragment Ore",
   "block.tutorialmod.dirty_moon_fragment_block": "Block of Dirty Moon Fragment",
+  "block.tutorialmod.sun_fragment_block": "Block of Sun Fragment",
+  "block.tutorialmod.dirty_sun_fragment_ore": "Dirty Sun Fragment Ore",
+  "block.tutorialmod.deepslate_dirty_sun_fragment_ore": "Deepslate Dirty Sun Fragment Ore",
+  "block.tutorialmod.dirty_sun_fragment_block": "Block of Dirty Sun Fragment",
 
   "block.tutorialmod.ebony_log": "Ebony Log",
   "block.tutorialmod.ebony_planks": "Ebony Planks",
