@@ -58,7 +58,6 @@ public class CoralSkeletonEntity extends Monster implements GeoEntity {
                 .add(Attributes.KNOCKBACK_RESISTANCE, 100D)
                 .add(Attributes.MAX_HEALTH, 25D)
                 .add(Attributes.ATTACK_DAMAGE, 15.0f)
-                .add(Attributes.ATTACK_SPEED, 50D)
                 .add(Attributes.MOVEMENT_SPEED, 0.3f).build();
 
 
@@ -68,7 +67,7 @@ public class CoralSkeletonEntity extends Monster implements GeoEntity {
     public void registerGoals() {
         this.goalSelector.addGoal(1, new RestrictSunGoal(this));
         this.goalSelector.addGoal(1, new FleeSunGoal(this, 1.0D));
-        this.goalSelector.addGoal(2, new AttackRangeGoal(this, 1.2D, false));
+        this.goalSelector.addGoal(4, new CoralSkeletonEntity.SpiderAttackGoal(this));
         this.goalSelector.addGoal(3, new TryFindWaterGoal(this));
         this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
         this.goalSelector.addGoal(5, new RandomStrollGoal(this, 0.8D));
@@ -136,5 +135,19 @@ public class CoralSkeletonEntity extends Monster implements GeoEntity {
 
     }
 
+    static class SpiderAttackGoal extends MeleeAttackGoal {
+        public SpiderAttackGoal(CoralSkeletonEntity p_33822_) {
+            super(p_33822_, 1.0D, true);
+        }
+
+        @Override
+        protected void resetAttackCooldown() {
+            this.ticksUntilNextAttack = this.adjustedTickDelay(25);
+        }
+        @Override
+        protected double getAttackReachSqr(LivingEntity p_25556_) {
+            return (double)(5);
+        }
+    }
 
 }

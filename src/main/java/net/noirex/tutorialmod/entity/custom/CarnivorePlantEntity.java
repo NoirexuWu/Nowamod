@@ -4,6 +4,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.entity.EntityDimensions;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
@@ -34,7 +35,6 @@ import javax.annotation.Nullable;
 
 public class CarnivorePlantEntity extends Monster implements GeoEntity{
     public AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
-    private static final double ATTACK_SPEED = 0.1;
 
     public CarnivorePlantEntity(EntityType<? extends Monster> p_33786_, Level p_33787_) {
         super(p_33786_, p_33787_);
@@ -47,16 +47,13 @@ public class CarnivorePlantEntity extends Monster implements GeoEntity{
                 .add(Attributes.ATTACK_KNOCKBACK, 5D)
                 .add(Attributes.MOVEMENT_SPEED, 0.0f)
                 .add(Attributes.ATTACK_DAMAGE, 15.0f)
-                .add(Attributes.KNOCKBACK_RESISTANCE, 100D)
-                .add(Attributes.ATTACK_SPEED, ATTACK_SPEED) // Ajouter l'attribut de vitesse d'attaque
-                .build();
+                .add(Attributes.KNOCKBACK_RESISTANCE, 100D).build();
 
     }
 
     @Override
     public void registerGoals() {
         this.goalSelector.addGoal(4, new CarnivorePlantEntity.SpiderAttackGoal(this));
-        this.goalSelector.addGoal(1, new CloseAttackRangeGoal(this, 1D, false));
 
         this.targetSelector.addGoal(1, new NearestAttackableTargetGoal<>(this, Player.class, true));
         this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, Dolphin.class, true));
@@ -136,6 +133,14 @@ public class CarnivorePlantEntity extends Monster implements GeoEntity{
         public SpiderAttackGoal(CarnivorePlantEntity p_33822_) {
             super(p_33822_, 1.0D, true);
         }
-    }
 
+        @Override
+        protected void resetAttackCooldown() {
+            this.ticksUntilNextAttack = this.adjustedTickDelay(50);
+        }
+        @Override
+        protected double getAttackReachSqr(LivingEntity p_25556_) {
+            return (double)(0.7);
+        }
+    }
 }

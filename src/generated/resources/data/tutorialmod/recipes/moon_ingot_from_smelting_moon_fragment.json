@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "tutorialmod:dirty_moon_fragment"
-  },
-  "result": "tutorialmod:moon_fragment"
-}

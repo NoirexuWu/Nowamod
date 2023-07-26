@@ -1,0 +1,13 @@
+{
+  "type": "forge:add_spawns",
+  "biomes":[
+    "minecraft:beach"
+  ],
+  "spawners": {
+    "type": "tutorialmod:shark",
+    "weight": 4,
+    "minCount": 1,
+    "maxCount": 3
+
+  }
+}

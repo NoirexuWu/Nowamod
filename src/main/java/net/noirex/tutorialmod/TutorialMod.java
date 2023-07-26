@@ -13,9 +13,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.noirex.tutorialmod.block.ModBlocks;
 import net.noirex.tutorialmod.entity.ModEntities;
-import net.noirex.tutorialmod.entity.client.CSkeletonRenderer;
-import net.noirex.tutorialmod.entity.client.CarnivorePlantRenderer;
-import net.noirex.tutorialmod.entity.client.CuteSpiderRenderer;
+import net.noirex.tutorialmod.entity.client.*;
+import net.noirex.tutorialmod.entity.custom.CyclopsCrawlerEntity;
 import net.noirex.tutorialmod.item.ModCreativeModeTabs;
 import net.noirex.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
@@ -65,9 +64,17 @@ public class TutorialMod {
             event.accept(ModItems.MOON_CHESTPLATE);
             event.accept(ModItems.MOON_LEGGINGS);
             event.accept(ModItems.MOON_BOOTS);
+            event.accept(ModItems.SUN_HELMET);
+            event.accept(ModItems.SUN_CHESTPLATE);
+            event.accept(ModItems.SUN_LEGGINGS);
+            event.accept(ModItems.SUN_BOOTS);
             event.accept(ModItems.CORAL_SKELETON_SPAWN_EGG);
             event.accept(ModItems.CUTE_SPIDER_SPAWN_EGG);
             event.accept(ModItems.CARNIVORE_PLANT_SPAWN_EGG);
+            event.accept(ModItems.BEAST_SPAWN_EGG);
+            event.accept(ModItems.CCRAWLER_SPAWN_EGG);
+            event.accept(ModItems.DARK_CROUNCH_SPAWN_EGG);
+            event.accept(ModItems.CHUBBY_SHARK_SPAWN_EGG);
         }
 
         if(event.getTab() == ModCreativeModeTabs.TUTORIAL_TAB.get()) {
@@ -75,6 +82,10 @@ public class TutorialMod {
             event.accept(ModBlocks.DIRTY_MOON_FRAGMENT_BLOCK);
             event.accept(ModBlocks.DIRTY_MOON_FRAGMENT_ORE);
             event.accept(ModBlocks.DEEPSLATE_MOON_FRAGMENT_ORE);
+            event.accept(ModBlocks.SUN_FRAGMENT_BLOCK);
+            event.accept(ModBlocks.DIRTY_SUN_FRAGMENT_BLOCK);
+            event.accept(ModBlocks.DIRTY_SUN_FRAGMENT_ORE);
+            event.accept(ModBlocks.DEEPSLATE_SUN_FRAGMENT_ORE);
             event.accept(ModBlocks.EBONY_LEAVES);
             event.accept(ModBlocks.EBONY_LOG);
             event.accept(ModBlocks.EBONY_WOOD);
@@ -93,6 +104,10 @@ public class TutorialMod {
             EntityRenderers.register(ModEntities.CSKELETON.get(), CSkeletonRenderer::new);
             EntityRenderers.register(ModEntities.CSPIDER.get(), CuteSpiderRenderer::new);
             EntityRenderers.register(ModEntities.CPLANT.get(), CarnivorePlantRenderer::new);
+            EntityRenderers.register(ModEntities.BEAST.get(), BeastRenderer::new);
+            EntityRenderers.register(ModEntities.CCRAWLER.get(), CyclopsCrawlerRenderer::new);
+            EntityRenderers.register(ModEntities.CROUNCH.get(), DarkCrouchRenderer::new);
+            EntityRenderers.register(ModEntities.SHARK.get(), ChubbySharkyRenderer::new);
         }
     }
 }

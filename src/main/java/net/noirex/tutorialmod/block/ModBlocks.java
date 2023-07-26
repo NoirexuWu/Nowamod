@@ -36,6 +36,18 @@ public class ModBlocks {
     public static final RegistryObject<Block> DEEPSLATE_MOON_FRAGMENT_ORE = registerBlock("deepslate_dirty_moon_fragment_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.ANCIENT_DEBRIS)
                     .strength(8f).requiresCorrectToolForDrops(), UniformInt.of(2,6)));
+    public static final RegistryObject<Block> SUN_FRAGMENT_BLOCK = registerBlock("sun_fragment_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.AMETHYST_BLOCK)
+                    .strength(5f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> DIRTY_SUN_FRAGMENT_BLOCK = registerBlock("dirty_sun_fragment_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)
+                    .strength(5f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> DIRTY_SUN_FRAGMENT_ORE = registerBlock("dirty_sun_fragment_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.ANCIENT_DEBRIS)
+                    .strength(5f).requiresCorrectToolForDrops(), UniformInt.of(2,6)));
+    public static final RegistryObject<Block> DEEPSLATE_SUN_FRAGMENT_ORE = registerBlock("deepslate_dirty_sun_fragment_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.ANCIENT_DEBRIS)
+                    .strength(8f).requiresCorrectToolForDrops(), UniformInt.of(2,6)));
 
 
 

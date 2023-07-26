@@ -130,6 +130,11 @@ public class CuteSpiderEntity extends Spider implements GeoEntity{
         public SpiderAttackGoal(CuteSpiderEntity p_33822_) {
             super(p_33822_, 1.0D, true);
         }
+
+        @Override
+        protected void resetAttackCooldown() {
+            this.ticksUntilNextAttack = this.adjustedTickDelay(15);
+        }
     }
 
 }

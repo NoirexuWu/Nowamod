@@ -13,10 +13,19 @@
   "item.tutorialmod.coral_skeleton_spawn_egg": "Coral Skeleton Spawn Egg",
   "item.tutorialmod.cute_spider_spawn_egg": "Phidippus Regius Spawn Egg",
   "item.tutorialmod.carnivore_plant_spawn_egg": "Trap Plant Spawn Egg",
+  "item.tutorialmod.beast_spawn_egg": "Beast Spawn Egg",
+  "item.tutorialmod.crounch_spawn_egg": "Dark Crounch Spawn Egg",
+  "item.tutorialmod.ccrawler_spawn_egg": "Cyclops Crawler Spawn Egg",
+  "item.tutorialmod.shark_spawn_egg": "Chubby Sharky Spawn Egg",
+
 
   "entity.tutorialmod.cskeleton": "Coral Skeleton",
   "entity.tutorialmod.cspider": "Phidippus Regius",
   "entity.tutorialmod.cplant": "Trap Plant",
+  "entity.tutorialmod.beast": "Beast",
+  "entity.tutorialmod.shark": "Chubby Sharky",
+  "entity.tutorialmod.ccrawler": "Cyclops Crawler",
+  "entity.tutorialmod.crounch": "Dark Crounch",
 
   "block.tutorialmod.moon_fragment_block": "Block of Moon Fragment",
   "block.tutorialmod.dirty_moon_fragment_ore": "Dirty Moon Fragment Ore",

@@ -1,8 +1,11 @@
 {
-  "type": "minecraft:stonecutting",
-  "count": 1,
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "iron_ingot",
   "ingredient": {
-    "item": "tutorialmod:dirty_sun_fragment"
+    "item": "tutorialmod:sun_fragment"
   },
-  "result": "tutorialmod:sun_fragment"
+  "result": "tutorialmod:sun_ingot"
 }

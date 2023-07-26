@@ -22,6 +22,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.DIRTY_MOON_FRAGMENT_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_MOON_FRAGMENT_ORE);
         blockWithItem(ModBlocks.DIRTY_MOON_FRAGMENT_BLOCK);
+        blockWithItem(ModBlocks.SUN_FRAGMENT_BLOCK);
+        blockWithItem(ModBlocks.DIRTY_SUN_FRAGMENT_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_SUN_FRAGMENT_ORE);
+        blockWithItem(ModBlocks.DIRTY_SUN_FRAGMENT_BLOCK);
 
         logBlock(((RotatedPillarBlock) ModBlocks.EBONY_LOG.get()));
         axisBlock((RotatedPillarBlock) ModBlocks.EBONY_WOOD.get(), blockTexture(ModBlocks.EBONY_LOG.get()), blockTexture(ModBlocks.EBONY_LOG.get()));

@@ -11,6 +11,6 @@ public class AttackRangeGoal extends MeleeAttackGoal {
     }
     @Override
     protected double getAttackReachSqr(LivingEntity p_25556_) {
-        return (double)(6);
+        return (double)(5);
     }
 }

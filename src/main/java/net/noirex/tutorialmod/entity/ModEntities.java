@@ -8,9 +8,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.noirex.tutorialmod.TutorialMod;
-import net.noirex.tutorialmod.entity.custom.CarnivorePlantEntity;
-import net.noirex.tutorialmod.entity.custom.CoralSkeletonEntity;
-import net.noirex.tutorialmod.entity.custom.CuteSpiderEntity;
+import net.noirex.tutorialmod.entity.custom.*;
 
 public class ModEntities {
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =
@@ -29,9 +27,34 @@ public class ModEntities {
     public static final RegistryObject<EntityType<CarnivorePlantEntity>> CPLANT =
             ENTITY_TYPES.register("cplant",
                     () -> EntityType.Builder.of(CarnivorePlantEntity::new, MobCategory.CREATURE)
-                            .sized(0.6f, 0.5f)
+                            .sized(1f, 0.1f)
                             .build(new ResourceLocation(TutorialMod.MOD_ID, "cplant").toString()));
-     public static void register(IEventBus eventBus) {
+    public static final RegistryObject<EntityType<BeastEntity>> BEAST =
+            ENTITY_TYPES.register("beast",
+                    () -> EntityType.Builder.of(BeastEntity::new, MobCategory.MONSTER)
+                            .sized(3.3f, 7.3f)
+                            .build(new ResourceLocation(TutorialMod.MOD_ID, "beast").toString()));
+    public static final RegistryObject<EntityType<CyclopsCrawlerEntity>> CCRAWLER =
+            ENTITY_TYPES.register("ccrawler",
+                    () -> EntityType.Builder.of(CyclopsCrawlerEntity::new, MobCategory.MONSTER)
+                            .sized(2.3f, 2f)
+                            .build(new ResourceLocation(TutorialMod.MOD_ID, "ccrawler").toString()));
+    public static final RegistryObject<EntityType<DarkCrounchEntity>> CROUNCH =
+            ENTITY_TYPES.register("crounch",
+                    () -> EntityType.Builder.of(DarkCrounchEntity::new, MobCategory.MONSTER)
+                            .sized(1.2f, 1.7f)
+                            .fireImmune()
+                            .build(new ResourceLocation(TutorialMod.MOD_ID, "crounch").toString()));
+    public static final RegistryObject<EntityType<ChubbySharkyEntity>> SHARK =
+            ENTITY_TYPES.register("shark",
+                    () -> EntityType.Builder.of(ChubbySharkyEntity::new, MobCategory.CREATURE)
+                            .sized(.5f, .5f)
+                            .build(new ResourceLocation(TutorialMod.MOD_ID, "shark").toString()));
+
+
+    public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
     }
+
+
 }

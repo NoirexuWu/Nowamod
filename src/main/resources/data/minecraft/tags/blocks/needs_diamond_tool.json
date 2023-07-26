@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "tutorialmod:moon_fragment_block"
+    "tutorialmod:moon_fragment_block",
+    "tutorialmod:sun_fragment_block"
   ]
 }
